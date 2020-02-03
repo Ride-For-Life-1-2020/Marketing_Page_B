@@ -1,0 +1,26 @@
+// Mixins Here
+@dk-var: 5;
+
+.btn {
+  margin: 10px;
+  border: 1px solid gray;
+  padding: 8px;
+  width: 4px (@dk-var*2) * 9%;
+
+  .dk-btn {
+    margin: 10px;
+    color: red;
+    background: blue;
+    width: (@dk-var*4) * 4%;
+    margin-left: @dk-var*2%;
+  }
+  &:hover {
+    background: green;
+    color: white;
+  }
+}
+
+.mixn {
+  .btn();
+  .dk-btn();
+}
