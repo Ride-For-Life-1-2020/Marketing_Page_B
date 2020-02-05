@@ -19,6 +19,10 @@
   border: 1px solid gray;
   padding: 8px;
   width: 4px 90%;
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  font-size: 2rem;
+  border-radius: 10px;
   margin: 10px;
   color: red;
   background: blue;
@@ -202,6 +206,18 @@ p {
   width: 95%;
   margin: 5px auto;
 }
+.btn {
+  width: 100%;
+  margin: 20px 0px 20px 0px;
+  font-size: 2rem;
+  border-radius: 10px;
+}
+.dk-btn {
+  width: 150px;
+  height: 40px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+}
 .dkNav {
   width: 100%;
   margin: 10px;
@@ -285,7 +301,7 @@ a:hover {
     color: white;
   }
   .top-content .text-container {
-    width: 95%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     padding: 0 1%;
@@ -295,9 +311,6 @@ a:hover {
     width: 50%;
     height: 60%;
   }
-  h2 {
-    font-size: 3rem;
-  }
   /* .btn {
     /* padding: 5px; */
   /* height: 20px; */
@@ -306,12 +319,8 @@ a:hover {
     display: flex;
     flex-direction: column;
   }
-  .bottom-content {
-    display: flex;
-    flex-direction: column;
-  }
 }
-@media (max-width:1000px) and (max-width:500px) {
+@media (max-width:500px) {
   html {
     width: 500px;
     margin: 10px auto;
@@ -366,16 +375,25 @@ a:hover {
   h2 {
     font-size: 3rem;
   }
+  /* .btn {
+    /* padding: 5px; */
+  /* height: 20px; */
+  /* width: 30px; */
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 .top-content {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  margin-top: 20px;
   margin-bottom: 20px;
   border-bottom: 1px dashed black;
 }
 .top-content .text-container {
-  width: 48%;
+  /* width: 48%; */
   padding: 0 1%;
   padding-bottom: 20px;
 }
@@ -410,7 +428,7 @@ a:hover {
 .bottom-content .text-container {
   padding-right: 4%;
 }
-.bottom-content .text-container:last-child {
+.bottom-content {
   padding-right: 0;
 }
 .boxes {
@@ -420,10 +438,9 @@ a:hover {
 }
 .box1,
 .box3 {
-  width: 18%;
+  width: 43%;
   height: 100px;
   margin: 20px 2.5%;
-  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -433,22 +450,46 @@ a:hover {
   border-radius: 30px;
 }
 .box3 {
-  background-color: forestgreen;
+  background-color: #00a2ff;
   border-radius: 30px;
-}
-.middle-img {
-  width: 100%;
-  margin: 20px 0px 20px 0px;
 }
 h2 {
   font-size: 2.5rem;
-  margin: 10px;
-  margin-bottom: 15px;
+  margin: 20px 20px 20px 0px;
   font-family: "Montserrat Bold";
 }
 p {
   font-size: 18px;
   margin-bottom: 10px;
+}
+.middle-content .boxes {
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width:1000px) {
+  .middle-content .boxes {
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    justify-content: space-around;
+  }
+  .boxes {
+    width: 150%;
+  }
+  .bottom-content {
+    margin: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width:500px) {
+  .bottom-content {
+    display: flex;
+    flex-direction: column;
+  }
 }
 footer {
   color: #22283b;
