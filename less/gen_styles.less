@@ -43,13 +43,47 @@ p {
   margin: 5px auto;
 }
 
-.btn {
-  width: 100%;
-  margin: 20px 0px 20px 0px;
-  font-size: 2rem;
-  border-radius: 10px;
-}
+.box1,
+.box3 {
+  width: 43%;
+  height: 10%;
+  margin: 20px 2.5%;
+  //color: white;
+  //display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px;
 
+  .btn {
+    width: 100%;
+    margin: 20px 0px 20px 0px;
+    font-size: 2rem;
+    border-radius: 10px;
+    background: navy;
+    text-align: -webkit-center;
+
+    .login {
+      margin: 0;
+
+      background: teal;
+
+      width: 70%;
+      height: 60%;
+      color: yellow;
+      display: flex;
+      padding: 12px;
+      vertical-align: bottom;
+      text-decoration: none;
+      font-size: 2rem;
+    }
+    &:hover {
+      background: green;
+      .login {
+        background: blue;
+      }
+    }
+  }
+}
 .dk-btn {
   width: 150px;
   height: 40px;
