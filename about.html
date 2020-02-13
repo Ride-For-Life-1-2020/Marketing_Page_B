@@ -45,53 +45,81 @@
       flex-direction:column;
     }*/
     .head-img {
-      width: 98%;
-      margin: 10px;
-      height:300px;
-    }
+    width: 98%;
+    margin: 1.2%;
+    height: 300px;
+    border-radius: 10px;
+}
 
-    .childOne, .childThree{
-      background-color:burlywood;
-      display:flex;
-      width:100%
-    }
-
+.childOne, .childThree {
+    background-color: #8793de;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
     
 .childTwo, .childFour{
       background-color:aqua;
       display:flex;
       width:100%;
+      border-radius:10px;
       
     }
-.childOne div, .childTwo div, .childThree div, .childFour div{
-  border:1px solid yellow;
-  width: 100%;
-  }
-
-.parent {
-border: 2px solid blue;
-display: flex;
-flex-direction:column;
-font-size: 18px;
+    .childOne div, .childTwo div, .childThree div, .childFour div {
+    /* border: 1px solid yellow; */
+    align-items: center;
+    /* width: 100%; */
+    display: flex;
+    flex-direction: column;
+    /* align-content: space-around; */
+    justify-content: center;
+}
+  .parent {
+    border: 2px solid black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    border-radius: 10px;
 }
 
 .parent div{
   margin: 14px;
 }
-.A, .B{
+/* .A, .B{
   width: 100%;
   display:flex;
   margin:5%;
+} */
+.A, .B {
+    width: 98%;
+    display: flex;
+    margin: 5%;
 }
-.dk{
+/* .dk{
   font-size:2.5rem;
   color:tomato;
+} */
+.dk {
+    font-size: 2.5rem;
+    color: tomato;
+    background: black;
+    text-align: center;
+    line-height: 1.5;
+    border-radius: 10px;
+    width: 99%;
+    margin: 1%;
 }
-.co,.ct{
+/* .co,.ct{
   width: 100px;
   height:100px;
-  
-
+  align-self:center;
+} */
+.co, .ct {
+    width: 100px;
+    /* height: 100px; */
+    /* align-self: auto; */
+    border-radius: 80px;
 }
 
 </style>
@@ -127,15 +155,15 @@ font-size: 18px;
       </div>
       
       <div class="B">
-        <div class="childThree">
-         <div><img class="ct" src="img\1.jpg" alt="strategy" />
+        <div class="childOne">
+         <div><img class="ct" src="img\Kabandangi.png" alt="strategy" />
           <p>Places We Work Iterative approaches to corporate strategy foster
-          collaborative thinking to further the overall value proposition.
+          collaborative thinking to further the overall value proposition.</p>
           <button class="button">Learn More</button>
           </div>
         </div>
-        <div class="childFour">
-          <div><img class="ct" src="img\1.jpg" alt="strategy" />
+        <div class="childTwo">
+          <div><img class="co" src="img\Tom.png" alt="strategy" />
             <p>Collaboration Iterative approaches to corporate strategy foster
             collaborative thinking to further the overall value proposition. Learn
             More Let's Work Together Leverage agile frameworks to provide a robust
@@ -147,17 +175,38 @@ font-size: 18px;
           </div>
         </div>
       </div>
+
+      <div class="A">
+      
+        <div class="childOne">
+         <div><img class ="co" src="img\Luis.png" alt="" />
+          <p>Strategy </p>Mr. A : "I have 1 plus years  experience in the Ride4life."
+          Would as a rule imply (quite) a lot of experience.
+          
+          "I have some experience in the hotel business."
+          Means some but not much - in BE at least , I'd say</p> 
+          <button class="button">Learn More</button>
+          </div>
+         </div>
+        <div class="childTwo">
+          <div><img class="ct" src="img\Brandon.png" alt="strategy" />
+           <p> How We Work</p> Iterative approaches to corporate strategy foster
+          collaborative thinking to further the overall value proposition. </p>
+          <button class="button">Learn More</button>
+          </div>
+        </div>
+      </div>
+      
         </div>
       <!--</div>-->
    
     <footer>
       <nav>
-        <a href="index.html">Home</a>
-        <a href="#">About</a>
-        <a href="#">Products</a>
-        <a href="#">Blog</a>
-        <a href="#">Contact</a>
-      </nav>
+        
+        <a href="index.html">About Us</a>
+        <a href="#"> How it works</a>
+        <a href="#">FAQs</a>
+        <a href="#">Contact us</a>      </nav>
     </footer>
 
 </div>
